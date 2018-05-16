@@ -1,0 +1,190 @@
+/*
+-
+-
+-
+Title
+-
+-
+-
+-
+*/
+.title{
+  text-align: center;
+  padding-top: 1em;
+  display: flex;
+}
+.name{
+  font-size: 1.9em;
+  padding-left: 2.3em;
+  font-family: 'Black Ops One', cursive;
+  letter-spacing: .5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart-img{
+  width: 70px;
+  float: right;
+  height: 70px;
+}
+.cart-img img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0.5em;
+  bottom: 1.2em;
+}
+.checkout{
+  font-family: "courier";
+  text-align: center;
+  font-size: 1.5em;
+  margin: 3em 0 1em 0;
+}
+/*
+-
+-
+-
+-
+Checkout
+-
+-
+-
+-
+*/
+section{
+  width: 100%;
+  display: flex;
+  font-family: "courier";
+}
+.acc-info{
+  width: 100%;
+  margin-left: 2em;
+}
+.acc-info div{
+  margin: 2em 0;
+}
+.pay-method div{
+  margin: 2em 0;
+}
+.pay-method{
+  width: 100%;
+  margin: 0 2em;
+}
+.region{
+  width: 100%;
+  display: flex;
+}
+.zip{
+  margin-left: 1em;
+}
+.exp{
+  width: 100%;
+  display: flex;
+  flex: 1;
+  margin: 0;
+}
+.month{
+  width: 100%;
+}
+.cv{
+  width: 100%;
+  margin-left: 2em;
+}
+input{
+  border:0 ;
+}
+.ctry select{
+  width: 100%;
+  border: 0;
+  background: 0;
+}
+::placeholder{
+  opacity: 0.5;
+}
+.price{
+  display: flex;
+}
+.nam{
+  margin-right: auto;
+  flex: 2;
+}
+.total{
+  display: flex;
+}
+.tot{
+  margin-right: auto;
+  flex: 2;
+}
+.place-order{
+  text-align: center;
+}
+.place-order > a{
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  padding: 1em 3em;
+  text-decoration: none;
+}
+@media screen and (max-width: 850px){
+  section{
+    flex-direction: column;
+    flex: 1;
+  }
+  .pay-method{
+  	margin: 0;
+  	width: 92%;
+  	padding: 0 1em;
+  }
+  .acc-info{
+  	margin: 0;
+  	width: 92%;
+  	padding: 0 1em;
+  }
+  .name{
+    padding-left: 2em;
+  }
+  .region{
+    flex-direction: column;
+  }
+  .zip{
+    margin-left: 0;
+  }
+  .exp{
+    flex-direction: column;
+  }
+  .cv{
+    margin-left: 0;
+  }
+}
+/*
+-
+-
+-
+-
+Footer
+-
+-
+-
+-
+*/
+.footer{
+  margin-top: 2em;
+  text-align: center;
+}
+.war{
+  color: grey;
+  font-family: "courier";
+  position: relative;
+  font-size: 0.8em;
+  text-decoration: none;
+  bottom: 10px;
+}
+.war:hover{
+  text-decoration: underline;
+}
+.caution > a{
+  font-size: 0.8em;
+  background-color: black;
+  opacity: 0.5;
+  padding: 5px;
+  color: white;
+}

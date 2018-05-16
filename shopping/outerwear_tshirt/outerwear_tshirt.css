@@ -1,0 +1,205 @@
+/*
+-
+-
+-
+Title
+-
+-
+-
+-
+*/
+.title{
+	text-align: center;
+	padding-top: 1em;
+	display: flex;
+}
+.name{
+	font-size: 1.9em;
+	padding-left: 2.3em;
+	font-family: 'Black Ops One', cursive;
+	letter-spacing: .5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cart-img{
+	width: 70px;
+	float: right;
+	height: 70px;
+}
+.cart-img img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 0.5em;
+	bottom: 1.2em;
+}
+/*
+-
+-
+-
+Menu Bar
+-
+-
+-
+-
+*/
+.menu{
+	display: flex;
+	list-style-type: none;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	padding: 0;
+}
+.menu li{
+	font-family: "courier";
+	margin: 0 1.2em;
+	font-size: 0.9em;
+}
+.menu a:hover{
+	text-decoration: underline;
+	color: red;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/*
+-
+-
+-
+Outwear
+-
+-
+-
+-
+*/
+.outwear{
+	width: 100%;
+	height: 250px;
+}
+.img{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+.msg{
+	font-family: "courier";
+	font-size: 1.2em;
+	text-align: center;
+	margin: 40px 0 60px 0;
+}
+.button{
+	text-align: center;
+}
+.button > a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	opacity: 0.7;
+	position: relative;
+	bottom: 2em;
+	padding: 10px 25px;
+	background-color: black;
+	font-family: "courier";
+}
+/*
+-
+-
+-
+-
+Products
+-
+-
+-
+-
+*/
+.products{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+/*----items----*/
+.item{
+	width: 100%;
+	text-align: center;
+	align-self: auto-fit;
+}
+.item-name{
+	font-family: "courier";
+	font-size: .8em;
+}
+@media screen and (min-width: 625px) and (max-width: 925px){
+	.products{
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+@media screen and (max-width: 760px){
+	.menu-bar ul{
+		display:none;
+	}
+	.mens-outerwear > .msg{
+		position: relative;
+		/*top: 1em;*/
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 625px){
+	.products{
+		grid-template-columns: repeat(2,1fr);
+	}
+	.item{
+		width: 100%;
+		height: 100%;
+	}
+	.item-img{
+		width: 200px;
+		height: 200px;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 500px){
+	.products{
+		grid-template-columns: repeat(2,1fr);
+	}
+	.item{
+		width: 100%;
+		height: 100%;
+	}
+	.item-img{
+		width: 150px;
+		height: 150px;
+	}
+}
+/*
+-
+-
+-
+-
+Footer
+-
+-
+-
+-
+*/
+.footer{
+	margin-top: 2em;
+	text-align: center;
+}
+.war{
+	color: grey;
+	font-family: "courier";
+	position: relative;
+	font-size: 0.8em;
+	text-decoration: none;
+	bottom: 10px;
+}
+.war:hover{
+	text-decoration: underline;
+}
+.caution > a{
+	font-size: 0.8em;
+	background-color: black;
+	opacity: 0.5;
+	padding: 5px;
+	color: white;
+}

@@ -1,0 +1,177 @@
+/*
+-
+-
+-
+Title
+-
+-
+-
+-
+*/
+.title{
+  text-align: center;
+  padding-top: 1em;
+  display: flex;
+}
+.name{
+  font-size: 1.9em;
+  padding-left: 2.3em;
+  font-family: 'Black Ops One', cursive;
+  letter-spacing: .5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cart-img{
+  width: 70px;
+  float: right;
+  height: 70px;
+}
+.cart-img img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0.5em;
+  bottom: 1.2em;
+}
+/*
+-
+-
+-
+Menu Bar
+-
+-
+-
+-
+*/
+.menu{
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+}
+.menu li{
+  font-family: "courier";
+  margin: 0 1.2em;
+  font-size: 0.9em;
+}
+.menu a:hover{
+  text-decoration: underline;
+  color: red;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 760px){
+  .menu-bar ul{
+    display:none;
+  }
+}
+/*
+-
+-
+-
+-
+Product
+-
+-
+-
+-
+*/
+.product{
+  display: flex;
+}
+/*----Product Image----*/
+.product-img{
+  width: 100%;
+}
+.product-img > .img{
+  width: 100%;
+}
+/*----Product Description----*/
+.product-desc{
+  font-family: "courier";
+}
+.prod-name{
+  width: 100%;
+  font-size: 1.5em;
+}
+.price{
+  width: 100%;
+  font-size: 1em;
+  color: grey;
+  margin: 1em 0 2em;
+}
+.add-cart{
+  width: 100%;
+  text-align: center;
+}
+.add-cart > a{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 1em 2em;
+  opacity: 0.7;
+  position: relative;
+  top: 1em;
+}
+.prod-selection-1{
+  width: 60%;
+  border: 0;
+  background: 0;
+  font-weight: bold;
+  margin-left: 4em;
+}
+.prod-selection-2{
+  width: 60%;
+  border: 0;
+  background: 0;
+  font-weight: bold;
+  margin-left: 1em;
+}
+.desc > p{
+  color: grey;
+}
+.feature{
+  color: grey;
+}
+@media screen and (max-width: 760px){
+  .product{
+    flex-direction: column;
+  }
+}
+/*
+-
+-
+-
+-
+Footer
+-
+-
+-
+-
+*/
+.footer{
+  margin-top: 2em;
+  text-align: center;
+}
+.war{
+  color: grey;
+  font-family: "courier";
+  position: relative;
+  font-size: 0.8em;
+  text-decoration: none;
+  bottom: 10px;
+}
+.war:hover{
+  text-decoration: underline;
+}
+.caution > a{
+  font-size: 0.8em;
+  background-color: black;
+  opacity: 0.5;
+  padding: 5px;
+  color: white;
+}

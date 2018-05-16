@@ -1,0 +1,190 @@
+/*
+-
+-
+-
+Title
+-
+-
+-
+-
+*/
+.title{
+	text-align: center;
+	padding-top: 1em;
+	display: flex;
+}
+.name{
+	font-size: 1.9em;
+	padding-left: 2.3em;
+	font-family: 'Black Ops One', cursive;
+	letter-spacing: .5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cart-img{
+	width: 70px;
+	float: right;
+	height: 70px;
+}
+.cart-img img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 0.5em;
+	bottom: 1.2em;
+}
+/*
+-
+-
+-
+Menu Bar
+-
+-
+-
+-
+*/
+.menu{
+	display: flex;
+	list-style-type: none;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	padding: 0;
+}
+.menu li{
+	font-family: "courier";
+	margin: 0 1.2em;
+	font-size: 0.9em;
+}
+.menu a:hover,{
+	text-decoration: underline;
+	color: red;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/*
+-
+-
+-
+Outwear
+-
+-
+-
+-
+*/
+.outwear{
+	width: 100%;
+	height: 250px;
+}
+.img{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+.msg{
+	font-family: "courier";
+	font-size: 1.2em;
+	text-align: center;
+	margin: 40px 0 80px 0;
+}
+.button{
+	text-align: center;
+}
+.button > a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	opacity: 0.7;
+	position: relative;
+	bottom: 2em;
+	padding: 10px 25px;
+	background-color: black;
+	font-family: "courier";
+}
+/*
+-
+-
+-
+-
+T-shirt
+-
+-
+-
+-
+*/
+.tshirt{
+	display: flex; 
+	flex-wrap: wrap;
+}
+.mens-tshirt{
+	flex-basis: 1;
+	width: 50%;
+}
+.ladies-tshirt{
+	flex-basis: 1;
+	width: 50%;
+}
+.shirt{
+	width: 100%;
+	height: 250px;
+}
+.shirt-img{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+}
+@media screen and (max-width: 700px){
+	.tshirt{
+		display: flex; 
+		flex-direction: column;
+	}
+	.mens-tshirt{
+		width: 100%;
+	}
+	.ladies-tshirt{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 760px){
+	.menu-bar ul{
+		display:none;
+	}
+}
+/*
+-
+-
+-
+-
+Footer
+-
+-
+-
+-
+*/
+.footer{
+  margin-top: 2em;
+  text-align: center;
+}
+.war{
+  color: grey;
+  font-family: "courier";
+  position: relative;
+  font-size: 0.8em;
+  text-decoration: none;
+  bottom: 10px;
+}
+.war:hover{
+  text-decoration: underline;
+}
+.caution > a{
+  font-size: 0.8em;
+  background-color: black;
+  opacity: 0.5;
+  padding: 5px;
+  color: white;
+}
